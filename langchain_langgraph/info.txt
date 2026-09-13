@@ -1,0 +1,20 @@
+openai-key
+
+# As chaves NÃO ficam mais neste arquivo (foram removidas do controle de versão).
+# Configure-as em um arquivo .env local (que está no .gitignore):
+#
+#   OPENAI_API_KEY=sk-proj-...
+#   ANTHROPIC_API_KEY=sk-ant-api03-...
+
+
+brew install uv
+
+mkdir primeiro
+cd primeiro
+
+
+uv --version
+uv init
+uv venv
+source .venv/bin/activate
+uv add langchain langchain-core langgraph langchain-openai langchain-anthropic python-dotenv
